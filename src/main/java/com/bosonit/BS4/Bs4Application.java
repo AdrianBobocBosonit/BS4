@@ -12,10 +12,10 @@ import javax.annotation.PostConstruct;
 //@EnableConfigurationProperties(SimpleProperties2.class)
 
 		//La siguiente línea es otro método para hacer lo mismo que anteriormente
-@ConfigurationPropertiesScan
+//@ConfigurationPropertiesScan
 public class Bs4Application {
 
-	@Autowired
+	/*@Autowired
 	private SimplePorperties simplePorperties;
 
 	@Autowired
@@ -25,7 +25,7 @@ public class Bs4Application {
 	private NestedProperties nestedProperties;
 
 	@Autowired
-	private ConvertedProperties convertedProperties;
+	private ConvertedProperties convertedProperties;*/
 
 	/*@Autowired
 	private BeanProperties beanProperties;*/
@@ -34,7 +34,7 @@ public class Bs4Application {
 		SpringApplication.run(Bs4Application.class, args);
 	}
 
-	@PostConstruct
+	/*@PostConstruct
 	private void postInit() {
 		System.out.println("Simple properties info...");
 		System.out.println(simplePorperties);
@@ -46,7 +46,7 @@ public class Bs4Application {
 		System.out.println(nestedProperties);
 
 		System.out.println("Converted properties info...");
-		System.out.println(convertedProperties);
+		System.out.println(convertedProperties);*/
 
 
 			//No me deja establecer las propiedades de un bean no se muy bien por qué
@@ -55,7 +55,7 @@ public class Bs4Application {
 		/*System.out.println("Bean properties info...");
 		System.out.println(beanProperties.getName());*/
 
-	}
+	//}
 
 	/*@ConfigurationProperties(prefix = "bean")
 	@Bean
